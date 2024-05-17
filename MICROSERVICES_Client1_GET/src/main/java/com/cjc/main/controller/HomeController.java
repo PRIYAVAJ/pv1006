@@ -14,8 +14,12 @@ public class HomeController
 {       
 	 @Autowired
 	     StudentServiceI ssi;
-	
-	
+
+	@GetMapping("/getm")
+	public String getme()
+	{
+	return "done"
+		}
 		@GetMapping("/getAllData")
 		public Iterable<Student>getAllData()
 		{
